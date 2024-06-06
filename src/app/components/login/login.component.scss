@@ -1,0 +1,189 @@
+.login-container {
+    width: 100%;
+    display: flex;
+
+    .carousel {
+      width: 50%;
+      .carousel-inner {
+        height: 91vh;
+        .bg-1{
+          background-image: url('/assets/joy.png');
+        }
+        .bg-2{
+          background-image: url('/assets/signin.png');
+        }
+        .carousel-item {
+          background-size: cover;
+          background-position: center;
+          text-align: center;
+          height: 100%;
+          position: relative;
+          .content{
+            width: 50%;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            .heading{
+              font-size: calc(1rem + .4vw);
+              line-height: calc(1.5rem + .4vw);
+            }
+            .desc{
+              font-size: calc(.77rem + .25vw);
+              line-height: calc(1.25rem + .2vw);
+            }
+          }
+        }
+      }
+  
+      .carousel-control-prev,
+      .carousel-control-next {
+        filter: invert(100%);
+      }
+    }
+  
+    .form-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      form{
+        width: 50%;
+        h2 {
+          margin-bottom: 20px;
+          font-weight: 700;
+          font-size: calc(1.5rem + .1vw);
+          line-height: calc(1.8rem + .1vw);
+        }
+        .form-group {
+          margin-top: 1.5rem;
+          position: relative;
+
+          .otp-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+              font-size: calc(.77rem + .25vw);
+              cursor: pointer;
+              line-height: calc(1.25rem + .2vw);
+              color: #bdc9d3;
+              font-weight: 500;          
+            }
+          }
+
+          .password-toggle {
+            position: absolute;
+            width: auto;
+            right: 10px;
+            top: 33px;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            color: #414141;
+            font-size: calc(.77rem + .25vw);
+            line-height: calc(1.25rem + .2vw);          
+          }
+        
+          .password-toggle:focus {
+            outline: none;
+          }
+      
+          label {
+            display: block;
+            color: #202124;
+            margin-bottom: 5px;
+            font-weight: 500;
+          }
+      
+          input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            box-sizing: border-box;
+          }
+          
+      
+          .error {
+            color: #ff5252;
+            font-size: calc(.77rem + .25vw);
+            line-height: calc(1.25rem + .2vw);
+          }
+        }
+      }
+    }
+
+    .forgot-password{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: .5rem ;
+      padding-bottom: .5rem;
+      a{
+        font-size: calc(.7rem + .2vw) !important;
+        line-height: calc(1.2rem + .2vw) !important;
+        text-decoration: none;
+        color: #4d89eb;
+        font-weight: 500;
+      }
+    }
+  
+    .btn {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 8px;
+      background-color: #3b7ce4;
+      border: none;
+      font-weight: 600;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .google{
+      background-color: #fff;
+      box-shadow: 0 3px 6px #e8eaed;
+    border: 1px solid #dadce0;
+    height: 42px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    }
+    .terms{
+        text-align: center !important;
+        padding-top: .25rem !important;
+        padding-bottom: .25rem !important;
+        margin-top: 1.5rem !important;
+        p{
+          font-size: calc(.7rem + .2vw);
+          line-height: calc(1.2rem + .2vw);
+          color: #5f6368;
+          .link{
+            text-decoration: none;
+          }
+        }
+    }
+  }
+  
+  .otp-section{
+    .buttons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span{
+        font-size: calc(.7rem + .2vw);
+        line-height: calc(1.2rem + .2vw);
+        text-decoration: none;
+        color: #4d89eb;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+   
+  }
