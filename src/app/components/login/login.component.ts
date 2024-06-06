@@ -21,7 +21,7 @@ export class LoginComponent {
 
   constructor(private authService: AuthService, private router: Router, private snackBar: MatSnackBar) {}
 
-  onSubmit(loginForm: NgForm) {
+  onSubmit(loginForm: NgForm) { 
     if (loginForm.invalid) {
       // Trigger validation messages
       Object.keys(loginForm.controls).forEach(field => {
